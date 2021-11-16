@@ -1,0 +1,61 @@
+Partlist
+
+Exported from picrocope_hub_v2r1.brd at 1/4/2021 2:10 PM
+
+EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant:
+
+Part     Value                 Package               Library               Position (mil)        Orientation
+
+B1       ARDUINO_UNO_R3        ARDUINO_R3            SparkFun-Boards       (1305 1050)           R0
+C1       0.1uF                 C0603                 adafruit              (1559.64567 618.07087) R0
+C2       47 uF                 C1210                 adafruit              (590.55118 1204.72441) R90
+C3       0.1uF                 C0603                 adafruit              (1275.70866 623.07087) R0
+C4       47 uF                 C1210                 adafruit              (-185.03937 2007.87402) R0
+C5       47 uF                 C1210                 adafruit              (-185.03937 1641.73228) R0
+C7       47 uF                 C1210                 adafruit              (-141.73228 1082.67717) R180
+D1       1N4148                LL-34                 Seeed-Diode           (1362.20472 1649.42913) R90
+D2       1N4148                LL-34                 Seeed-Diode           (1050.82677 1649.42913) R90
+D3       1N4148                LL-34                 Seeed-Diode           (1673.22835 1649.42913) R90
+D4       1N4148                LL-34                 Seeed-Diode           (1944.88189 1649.42913) R90
+D5       1N4148                LL-34                 Seeed-Diode           (2204.72441 1649.42913) R90
+JP4                            1X02                  pinhead               (1230.07874 387.24409) R180
+JP5                            1X02                  pinhead               (1460.07874 387.24409) R180
+K1       2071508-1             RELAY_2071508-1       2071508-1             (913.38583 1141.73228) R270
+K2       2071508-1             RELAY_2071508-1       2071508-1             (1350.3937 1137.79528) R270
+K3       2071508-1             RELAY_2071508-1       2071508-1             (1791.33858 1137.79528) R270
+K4       2071508-1             RELAY_2071508-1       2071508-1             (2232.28346 1137.79528) R270
+K5       2071508-1             RELAY_2071508-1       2071508-1             (405.51181 220.47244) R0
+Q1       600mA/40V             SOT23-3               SparkFun-DiscreteSemi (913.70079 1651.39764) R180
+Q2       600mA/40V             SOT23-3               SparkFun-DiscreteSemi (1220.47244 1651.39764) R180
+Q3       600mA/40V             SOT23-3               SparkFun-DiscreteSemi (1547.24409 1651.39764) R180
+Q4       600mA/40V             SOT23-3               SparkFun-DiscreteSemi (1822.83465 1651.39764) R180
+Q5       600mA/40V             SOT23-3               SparkFun-DiscreteSemi (2090.55118 1651.39764) R180
+R1       1k                    R0603                 resistor              (913.70079 1773.62205) R0
+R2       1k                    R0603                 resistor              (1228.34646 1773.62205) R0
+R3       1k                    R0603                 resistor              (1551.1811 1773.62205) R0
+R4       1k                    R0603                 resistor              (1822.83465 1773.62205) R0
+R5       1k                    R0603                 resistor              (1432.51969 522.00787) R0
+R6       10k                   R0603                 resistor              (1559.64567 522.00787) R0
+R7       2.727k                R0603                 adafruit              (590.55118 944.88189) R270
+R8       2.727k                R0603                 adafruit              (-925.19685 1661.41732) R270
+R9       1k                    R0603                 resistor              (1145.70866 523.07087) R0
+R10      10k                   R0603                 resistor              (1275.70866 523.07087) R0
+R11      1k                    R0603                 resistor              (2090.55118 1773.62205) R0
+SJ1                            SJ_2                  jumper                (-925.19685 1933.07087) R90
+SJ2                            SJ_2                  jumper                (-133.85827 909.44882) R180
+U$1      PVX012A0XV1           PVX012A0X             PVX012A0X             (-3.93701 834.64567)  R0
+U$2      PVX012A0XV1           PVX012A0X             PVX012A0X             (-822.83465 2062.99213) R270
+U$3      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (346.45669 1779.52756) R0
+U$4      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (90.55118 1779.52756) R0
+U$5      TEMP-HUM-SENSOR-DHT22 TEMP-HUM-S      diy-modules           (2187.48031 419.29134) R180
+U$6      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-898.50394 316.53543) R180
+U$7      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-699.2126 892.28346) R90
+U$8      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-699.2126 1153.77953) R90
+U$9      MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-695.27559 1419.2126) R90
+U$10     PTC_1206              1206                  pat                   (-181.10236 1874.01575) R180
+U$11     PTC_1206              1206                  pat                   (-141.02362 1246.06299) R0
+U$12     MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-346.45669 314.96063) R180
+U$13     MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (-618.11024 314.96063) R180
+U$14     MOLEX_0039301022      MINI-FIT_JR_CONN      pat                   (948.8189 322.83465)  R180
