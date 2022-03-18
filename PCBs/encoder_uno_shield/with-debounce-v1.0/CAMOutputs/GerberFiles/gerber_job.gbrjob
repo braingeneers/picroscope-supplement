@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-03-16T22:00:30Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "shield board"
+        },
+        "Owner": "Pierre Baudin <Pierre.alex.baudin@gmail.com>",
+        "Size": {
+            "X": 66.401,
+            "Y": 53.137
+        }
+    }
+}
