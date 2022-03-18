@@ -220,12 +220,12 @@
 </layers>
 <board>
 <plain>
-<wire x1="-0.635" y1="53.137" x2="-0.635" y2="0.127" width="0" layer="20"/>
-<wire x1="-0.635" y1="0.127" x2="65.766" y2="0.254" width="0" layer="20"/>
-<wire x1="65.766" y1="0.254" x2="65.766" y2="53.264" width="0" layer="20"/>
-<wire x1="65.766" y1="53.264" x2="-0.635" y2="53.137" width="0" layer="20"/>
-<dimension x1="-0.635" y1="53.137" x2="-0.635" y2="0.127" x3="76.454" y3="26.632" textsize="1.778" layer="20"/>
-<dimension x1="-0.635" y1="0.127" x2="65.766" y2="0.254" x3="32.444365625" y3="63.5231875" textsize="1.778" layer="20"/>
+<wire x1="-0.635" y1="53.137" x2="-0.635" y2="0.127" width="0" layer="20" grouprefs="CHANGESTUFF"/>
+<wire x1="-0.635" y1="0.127" x2="65.766" y2="0.254" width="0" layer="20" grouprefs="CHANGESTUFF"/>
+<wire x1="65.766" y1="0.254" x2="65.766" y2="53.264" width="0" layer="20" grouprefs="CHANGESTUFF"/>
+<wire x1="65.766" y1="53.264" x2="-0.635" y2="53.137" width="0" layer="20" grouprefs="CHANGESTUFF"/>
+<dimension x1="-0.635" y1="53.137" x2="-0.635" y2="0.127" x3="76.454" y3="26.632" textsize="1.778" layer="20" grouprefs="CHANGESTUFF"/>
+<dimension x1="-0.635" y1="0.127" x2="65.766" y2="0.254" x3="32.444365625" y3="63.5231875" textsize="1.778" layer="20" grouprefs="CHANGESTUFF"/>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
@@ -1692,107 +1692,111 @@ design rules under a new name.</description>
 <param name="cfChangeDir" value="25"/>
 </pass>
 </autorouter>
+<groups>
+<board_group name="CHANGESTUFF"/>
+<board_group name="PARTS-AND-WIRES"/>
+</groups>
 <elements>
-<element name="U1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="ARDUINOR3-BPLACE" package3d_urn="urn:adsk.eagle:package:6240879/1" value="ARDUINOR3-BPLACE" x="0" y="0" smashed="yes"/>
-<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="61.087" y="14.224" smashed="yes">
-<attribute name="NAME" x="55.052" y="18.966" size="1.27" layer="25"/>
-<attribute name="VALUE" x="61.752" y="16.426" size="1.27" layer="27"/>
+<element name="U1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="ARDUINOR3-BPLACE" package3d_urn="urn:adsk.eagle:package:6240879/1" value="ARDUINOR3-BPLACE" x="0" y="0" smashed="yes" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="61.087" y="14.224" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="NAME" x="67.122" y="18.966" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="60.422" y="16.426" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="61.087" y="12.192" smashed="yes" rot="R180"/>
-<element name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="61.087" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.38" y="11.43" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="54.38" y="14.224" size="1.27" layer="27" rot="R180"/>
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="61.087" y="12.192" smashed="yes" rot="MR180" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="61.087" y="10.16" smashed="yes" rot="MR180" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="NAME" x="67.794" y="11.43" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="67.794" y="14.224" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="U$1" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="60.198" y="21.59" smashed="yes" rot="R90"/>
-<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="56.134" y="14.224" smashed="yes">
-<attribute name="NAME" x="68.707" y="11.049" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="55.88" y="16.002" size="1.27" layer="27"/>
+<element name="U$1" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="60.198" y="21.59" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="56.134" y="14.224" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="NAME" x="43.561" y="11.049" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="56.388" y="16.002" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="56.134" y="12.192" smashed="yes" rot="R180">
-<attribute name="NAME" x="47.752" y="13.97" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="51.181" y="13.843" size="1.27" layer="27" rot="R180"/>
+<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="56.134" y="12.192" smashed="yes" rot="MR180" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="NAME" x="64.516" y="13.97" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="61.087" y="13.843" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="56.134" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="50.419" y="10.795" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="51.689" y="12.573" size="1.27" layer="27" rot="R180"/>
+<element name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="56.134" y="10.16" smashed="yes" rot="MR180" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="NAME" x="61.849" y="10.795" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="60.579" y="12.573" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="U$2" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="60.325" y="28.448" smashed="yes" rot="R90"/>
-<element name="U$3" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.302" y="6.985" smashed="yes" rot="R270"/>
-<element name="U$4" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.429" y="13.589" smashed="yes" rot="R270"/>
-<element name="U$5" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.302" y="28.321" smashed="yes" rot="R270"/>
-<element name="U$6" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.429" y="20.828" smashed="yes" rot="R270"/>
-<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="39.37" y="36.83" smashed="yes">
-<attribute name="VALUE" x="38.481" y="33.274" size="1.27" layer="27"/>
+<element name="U$2" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="60.325" y="28.448" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="U$3" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.302" y="6.985" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="U$4" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.429" y="13.589" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="U$5" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.302" y="28.321" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="U$6" library="pat" package="MINI-FIT_JR_CONN" value="MOLEX_0039301022" x="3.429" y="20.828" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="39.37" y="36.83" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="40.259" y="33.274" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="39.37" y="38.862" smashed="yes">
-<attribute name="VALUE" x="42.799" y="36.322" size="1.27" layer="27"/>
+<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="39.37" y="38.862" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="35.941" y="36.322" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="39.37" y="40.894" smashed="yes">
-<attribute name="VALUE" x="42.672" y="40.894" size="1.27" layer="27"/>
+<element name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="39.37" y="40.894" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="36.068" y="40.894" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="34.671" y="38.989" smashed="yes" rot="R90">
+<element name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="34.671" y="38.989" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="33.02" y="35.433" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="34" x="41.402" y="30.988" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="38.989" y="35.433" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="43.688" y="38.989" smashed="yes" rot="R270">
+<element name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="43.688" y="38.989" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="45.847" y="42.418" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="34" x="43.688" y="54.991" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="39.37" y="42.545" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="54.102" y="36.83" smashed="yes">
-<attribute name="VALUE" x="53.213" y="33.274" size="1.27" layer="27"/>
+<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="54.102" y="36.83" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="54.991" y="33.274" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="54.102" y="38.862" smashed="yes">
-<attribute name="VALUE" x="57.531" y="36.322" size="1.27" layer="27"/>
+<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="54.102" y="38.862" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="50.673" y="36.322" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="54.102" y="40.894" smashed="yes">
-<attribute name="VALUE" x="57.404" y="40.894" size="1.27" layer="27"/>
+<element name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="54.102" y="40.894" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="50.8" y="40.894" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="JP5" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="49.403" y="38.989" smashed="yes" rot="R90">
+<element name="JP5" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="49.403" y="38.989" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="47.752" y="35.433" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="34" x="56.134" y="30.988" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="53.721" y="35.433" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP6" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="58.42" y="38.989" smashed="yes" rot="R270">
+<element name="JP6" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="58.42" y="38.989" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="60.579" y="42.418" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="34" x="58.42" y="54.991" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="54.102" y="42.545" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="8.636" y="36.576" smashed="yes">
-<attribute name="VALUE" x="7.747" y="33.02" size="1.27" layer="27"/>
+<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="8.636" y="36.576" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="9.525" y="33.02" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="8.636" y="38.608" smashed="yes">
-<attribute name="VALUE" x="12.065" y="36.068" size="1.27" layer="27"/>
+<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="8.636" y="38.608" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="5.207" y="36.068" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="8.636" y="40.64" smashed="yes">
-<attribute name="VALUE" x="11.938" y="40.64" size="1.27" layer="27"/>
+<element name="C6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="8.636" y="40.64" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="5.334" y="40.64" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="JP7" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="3.937" y="38.735" smashed="yes" rot="R90">
+<element name="JP7" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="3.937" y="38.735" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="2.286" y="35.179" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="34" x="10.668" y="30.734" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.255" y="35.179" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP8" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="12.954" y="38.735" smashed="yes" rot="R270">
+<element name="JP8" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="12.954" y="38.735" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="15.113" y="42.164" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="34" x="12.954" y="54.737" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="8.636" y="42.291" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="24.384" y="36.957" smashed="yes">
-<attribute name="VALUE" x="23.495" y="33.401" size="1.27" layer="27"/>
+<element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="24.384" y="36.957" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="25.273" y="33.401" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="24.384" y="38.989" smashed="yes">
-<attribute name="VALUE" x="27.813" y="36.449" size="1.27" layer="27"/>
+<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="24.384" y="38.989" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="20.955" y="36.449" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="24.384" y="41.021" smashed="yes">
-<attribute name="VALUE" x="27.686" y="41.021" size="1.27" layer="27"/>
+<element name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" package3d_urn="urn:adsk.eagle:package:6240338/1" value="0.1uF" x="24.384" y="41.021" smashed="yes" rot="MR0" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
+<attribute name="VALUE" x="21.082" y="41.021" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="JP11" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="19.685" y="39.116" smashed="yes" rot="R90">
+<element name="JP11" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="19.685" y="39.116" smashed="yes" rot="R90" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="18.034" y="35.56" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="34" x="26.416" y="31.115" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="24.003" y="35.56" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP12" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="28.702" y="39.116" smashed="yes" rot="R270">
+<element name="JP12" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="28.702" y="39.116" smashed="yes" rot="R270" grouprefs="PARTS-AND-WIRES CHANGESTUFF">
 <attribute name="NAME" x="30.861" y="42.545" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="34" x="28.702" y="55.118" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="24.384" y="42.672" size="1.27" layer="27" ratio="10" rot="R270"/>
@@ -1803,7 +1807,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="GND"/>
 <contactref element="C2" pad="2"/>
 <contactref element="U$1" pad="P$2"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="16" grouprefs="CHANGESTUFF">
 <vertex x="0" y="52.07"/>
 <vertex x="0" y="0.762"/>
 <vertex x="68.58" y="0.762"/>
@@ -1830,8 +1834,9 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>
 <contactref element="U$1" pad="P$1"/>
-<wire x1="60.198" y1="21.59" x2="60.198" y2="14.263" width="0.1524" layer="1"/>
-<wire x1="60.198" y1="14.263" x2="60.237" y2="14.224" width="0.1524" layer="1"/>
+<wire x1="60.198" y1="21.59" x2="60.198" y2="14.263" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.198" y1="14.263" x2="60.237" y2="14.224" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.237" y1="14.224" x2="61.937" y2="14.224" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND2">
 <contactref element="U1" pad="GND2"/>
@@ -1841,287 +1846,307 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="U1" pad="5V"/>
 <contactref element="R2" pad="2"/>
-<wire x1="60.5637125" y1="12.192" x2="60.237" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="38.1" y1="2.54" x2="38.1" y2="7.060753125" width="0.1524" layer="1"/>
-<wire x1="38.1" y1="7.060753125" x2="43.231246875" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="55.284" y1="12.192" x2="43.231246875" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="55.284" y1="12.192" x2="56.134" y2="13.042" width="0.1524" layer="1"/>
-<wire x1="56.134" y1="14.986" x2="56.769" y2="15.621" width="0.1524" layer="1"/>
-<wire x1="56.769" y1="15.621" x2="58.674" y2="15.621" width="0.1524" layer="1"/>
-<wire x1="59.309" y1="14.986" x2="59.309" y2="12.827" width="0.1524" layer="1"/>
-<wire x1="59.309" y1="12.827" x2="59.944" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="56.134" y1="13.042" x2="56.134" y2="14.986" width="0.1524" layer="1"/>
-<wire x1="58.674" y1="15.621" x2="59.309" y2="14.986" width="0.1524" layer="1"/>
-<wire x1="59.944" y1="12.192" x2="60.237" y2="12.192" width="0.1524" layer="1"/>
+<wire x1="60.5637125" y1="12.192" x2="59.944" y2="12.192" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="38.1" y1="2.54" x2="38.1" y2="7.060753125" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="38.1" y1="7.060753125" x2="43.231246875" y2="12.192" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="55.284" y1="12.192" x2="43.231246875" y2="12.192" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="55.284" y1="12.192" x2="56.134" y2="13.042" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.134" y1="14.986" x2="56.769" y2="15.621" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.769" y1="15.621" x2="58.674" y2="15.621" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="59.309" y1="14.986" x2="59.309" y2="12.827" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="59.309" y1="12.827" x2="59.944" y2="12.192" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.134" y1="13.042" x2="56.134" y2="14.986" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="58.674" y1="15.621" x2="59.309" y2="14.986" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 <contactref element="U$3" pad="P$2"/>
 <contactref element="U$4" pad="P$2"/>
 <contactref element="R10" pad="2"/>
 <contactref element="R8" pad="2"/>
 <contactref element="R12" pad="2"/>
 <contactref element="R16" pad="2"/>
-<wire x1="9.486" y1="38.608" x2="10.922" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="10.922" y1="38.608" x2="11.04071875" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="11.04071875" y1="38.608" x2="11.85351875" y2="37.7952" width="0.1524" layer="1"/>
-<wire x1="11.85351875" y1="37.7952" x2="14.1732" y2="37.7952" width="0.1524" layer="1"/>
-<wire x1="14.1732" y1="37.7952" x2="17.653" y2="41.275" width="0.1524" layer="1"/>
-<wire x1="17.653" y1="41.275" x2="17.653" y2="43.815" width="0.1524" layer="1"/>
-<wire x1="17.653" y1="43.815" x2="31.369" y2="43.815" width="0.1524" layer="1"/>
-<wire x1="31.369" y1="43.815" x2="31.369" y2="41.148" width="0.1524" layer="1"/>
-<wire x1="31.369" y1="41.148" x2="30.48" y2="40.259" width="0.1524" layer="1"/>
-<wire x1="26.504" y1="40.259" x2="25.234" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="30.48" y1="40.259" x2="26.504" y2="40.259" width="0.1524" layer="1"/>
-<wire x1="25.234" y1="38.989" x2="26.162" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="26.162" y1="38.989" x2="27.178" y2="37.973" width="0.1524" layer="1"/>
-<wire x1="27.178" y1="37.973" x2="32.258" y2="37.973" width="0.1524" layer="1"/>
-<wire x1="33.02" y1="38.735" x2="33.02" y2="43.434" width="0.1524" layer="1"/>
-<wire x1="32.258" y1="37.973" x2="33.02" y2="38.735" width="0.1524" layer="1"/>
-<wire x1="33.02" y1="43.434" x2="33.401" y2="43.815" width="0.1524" layer="1"/>
-<wire x1="33.401" y1="43.815" x2="44.704" y2="43.815" width="0.1524" layer="1"/>
-<wire x1="44.704" y1="43.815" x2="45.974" y2="42.545" width="0.1524" layer="1"/>
-<wire x1="45.974" y1="40.513" x2="45.593" y2="40.132" width="0.1524" layer="1"/>
-<wire x1="41.49" y1="40.132" x2="40.22" y2="38.862" width="0.1524" layer="1"/>
-<wire x1="45.974" y1="42.545" x2="45.974" y2="40.513" width="0.1524" layer="1"/>
-<wire x1="45.593" y1="40.132" x2="41.49" y2="40.132" width="0.1524" layer="1"/>
-<wire x1="40.22" y1="38.862" x2="41.77471875" y2="38.862" width="0.1524" layer="1"/>
-<wire x1="41.77471875" y1="38.862" x2="42.58751875" y2="38.0492" width="0.1524" layer="1"/>
-<wire x1="42.58751875" y1="38.0492" x2="45.6692" y2="38.0492" width="0.1524" layer="1"/>
-<wire x1="47.752" y1="40.132" x2="47.752" y2="43.434" width="0.1524" layer="1"/>
-<wire x1="45.6692" y1="38.0492" x2="47.752" y2="40.132" width="0.1524" layer="1"/>
-<wire x1="59.182" y1="43.434" x2="60.833" y2="41.783" width="0.1524" layer="1"/>
-<wire x1="60.833" y1="41.783" x2="60.833" y2="40.64" width="0.1524" layer="1"/>
-<wire x1="56.222" y1="40.132" x2="54.952" y2="38.862" width="0.1524" layer="1"/>
-<wire x1="47.752" y1="43.434" x2="59.182" y2="43.434" width="0.1524" layer="1"/>
-<wire x1="60.833" y1="40.64" x2="60.325" y2="40.132" width="0.1524" layer="1"/>
-<wire x1="60.325" y1="40.132" x2="56.222" y2="40.132" width="0.1524" layer="1"/>
-<wire x1="8.802" y1="6.985" x2="28.575" y2="6.985" width="0.1524" layer="1"/>
-<wire x1="28.575" y1="6.985" x2="30.607" y2="4.953" width="0.1524" layer="1"/>
-<wire x1="30.607" y1="4.953" x2="30.607" y2="2.667" width="0.1524" layer="1"/>
-<wire x1="30.607" y1="2.667" x2="30.48" y2="2.54" width="0.1524" layer="1"/>
-<wire x1="8.802" y1="6.985" x2="8.802" y2="12.866" width="0.1524" layer="1"/>
-<wire x1="8.802" y1="12.866" x2="9.525" y2="13.589" width="0.1524" layer="1"/>
-<wire x1="9.525" y1="13.589" x2="8.929" y2="13.589" width="0.1524" layer="1"/>
-<wire x1="8.929" y1="13.589" x2="5.5" y2="17.018" width="0.1524" layer="1"/>
-<wire x1="5.5" y1="17.018" x2="1.27" y2="17.018" width="0.1524" layer="1"/>
-<wire x1="1.27" y1="17.018" x2="1.27" y2="44.069" width="0.1524" layer="1"/>
-<wire x1="1.27" y1="44.069" x2="15.24" y2="44.069" width="0.1524" layer="1"/>
-<wire x1="15.24" y1="44.069" x2="15.621" y2="43.688" width="0.1524" layer="1"/>
-<wire x1="14.478" y1="39.878" x2="11.049" y2="39.878" width="0.1524" layer="1"/>
-<wire x1="11.049" y1="39.878" x2="10.922" y2="39.751" width="0.1524" layer="1"/>
-<wire x1="10.922" y1="39.751" x2="10.922" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="15.621" y1="43.688" x2="15.621" y2="41.021" width="0.1524" layer="1"/>
-<wire x1="15.621" y1="41.021" x2="14.478" y2="39.878" width="0.1524" layer="1"/>
-<wire x1="30.48" y1="2.54" x2="38.1" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="9.486" y1="38.608" x2="10.922" y2="38.608" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="10.922" y1="38.608" x2="11.04071875" y2="38.608" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="11.04071875" y1="38.608" x2="11.85351875" y2="37.7952" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="11.85351875" y1="37.7952" x2="14.1732" y2="37.7952" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="14.1732" y1="37.7952" x2="17.653" y2="41.275" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="17.653" y1="41.275" x2="17.653" y2="43.815" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="17.653" y1="43.815" x2="31.369" y2="43.815" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="31.369" y1="43.815" x2="31.369" y2="41.148" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="31.369" y1="41.148" x2="30.48" y2="40.259" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="26.504" y1="40.259" x2="25.234" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="30.48" y1="40.259" x2="26.504" y2="40.259" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="25.234" y1="38.989" x2="26.162" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="26.162" y1="38.989" x2="27.178" y2="37.973" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="27.178" y1="37.973" x2="32.258" y2="37.973" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="33.02" y1="38.735" x2="33.02" y2="43.434" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="32.258" y1="37.973" x2="33.02" y2="38.735" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="33.02" y1="43.434" x2="33.401" y2="43.815" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="33.401" y1="43.815" x2="44.704" y2="43.815" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="44.704" y1="43.815" x2="45.974" y2="42.545" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.974" y1="40.513" x2="45.593" y2="40.132" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="41.49" y1="40.132" x2="40.22" y2="38.862" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.974" y1="42.545" x2="45.974" y2="40.513" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.593" y1="40.132" x2="41.49" y2="40.132" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="40.22" y1="38.862" x2="41.77471875" y2="38.862" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="41.77471875" y1="38.862" x2="42.58751875" y2="38.0492" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="42.58751875" y1="38.0492" x2="45.6692" y2="38.0492" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="47.752" y1="40.132" x2="47.752" y2="43.434" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.6692" y1="38.0492" x2="47.752" y2="40.132" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="59.182" y1="43.434" x2="60.833" y2="41.783" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.833" y1="41.783" x2="60.833" y2="40.64" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.222" y1="40.132" x2="54.952" y2="38.862" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="47.752" y1="43.434" x2="59.182" y2="43.434" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.833" y1="40.64" x2="60.325" y2="40.132" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.325" y1="40.132" x2="56.222" y2="40.132" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="8.802" y1="6.985" x2="28.575" y2="6.985" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.575" y1="6.985" x2="30.607" y2="4.953" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="30.607" y1="4.953" x2="30.607" y2="2.667" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="30.607" y1="2.667" x2="30.48" y2="2.54" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="8.802" y1="6.985" x2="8.802" y2="12.866" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="8.802" y1="12.866" x2="9.525" y2="13.589" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="9.525" y1="13.589" x2="8.929" y2="13.589" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="8.929" y1="13.589" x2="5.5" y2="17.018" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="5.5" y1="17.018" x2="1.27" y2="17.018" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="1.27" y1="17.018" x2="1.27" y2="44.069" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="1.27" y1="44.069" x2="15.24" y2="44.069" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="15.24" y1="44.069" x2="15.621" y2="43.688" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="14.478" y1="39.878" x2="11.049" y2="39.878" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="11.049" y1="39.878" x2="10.922" y2="39.751" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="10.922" y1="39.751" x2="10.922" y2="38.608" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="15.621" y1="43.688" x2="15.621" y2="41.021" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="15.621" y1="41.021" x2="14.478" y2="39.878" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="54.952" y1="38.862" x2="53.252" y2="38.862" width="0" layer="19" extent="16-16"/>
+<wire x1="7.786" y1="38.608" x2="9.486" y2="38.608" width="0" layer="19" extent="16-16"/>
+<wire x1="38.1" y1="2.54" x2="30.48" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="61.937" y1="12.192" x2="60.5637125" y2="12.192" width="0" layer="19" extent="16-16"/>
+<wire x1="56.984" y1="12.192" x2="60.5637125" y2="12.192" width="0" layer="19" extent="16-16"/>
+<wire x1="23.534" y1="38.989" x2="9.486" y2="38.608" width="0" layer="19" extent="16-16"/>
+<wire x1="38.52" y1="38.862" x2="53.252" y2="38.862" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R3" pad="1"/>
 <contactref element="U$2" pad="P$1"/>
-<wire x1="59.778" y1="28.448" x2="60.325" y2="28.448" width="0.1524" layer="1"/>
-<wire x1="60.325" y1="28.448" x2="60.325" y2="25.908" width="0.1524" layer="1"/>
-<wire x1="60.325" y1="25.908" x2="59.436" y2="25.019" width="0.1524" layer="1"/>
-<wire x1="59.436" y1="25.019" x2="51.816" y2="25.019" width="0.1524" layer="1"/>
-<wire x1="51.816" y1="25.019" x2="51.689" y2="24.892" width="0.1524" layer="1"/>
-<wire x1="51.689" y1="24.892" x2="51.689" y2="17.526" width="0.1524" layer="1"/>
-<wire x1="51.689" y1="17.526" x2="54.991" y2="14.224" width="0.1524" layer="1"/>
-<wire x1="54.991" y1="14.224" x2="55.284" y2="14.224" width="0.1524" layer="1"/>
+<wire x1="59.778" y1="28.448" x2="60.325" y2="28.448" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.325" y1="28.448" x2="60.325" y2="25.908" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.325" y1="25.908" x2="59.436" y2="25.019" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="59.436" y1="25.019" x2="51.816" y2="25.019" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="51.816" y1="25.019" x2="51.689" y2="24.892" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="51.689" y1="24.892" x2="51.689" y2="17.526" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="51.689" y1="17.526" x2="54.991" y2="14.224" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="54.991" y1="14.224" x2="55.284" y2="14.224" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="55.284" y1="14.224" x2="56.984" y2="14.224" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SW_X">
 <contactref element="U1" pad="A0"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R3" pad="2"/>
-<wire x1="56.984" y1="14.224" x2="56.984" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="56.984" y1="10.16" x2="50.8" y2="3.976" width="0.1524" layer="1"/>
-<wire x1="50.8" y1="3.976" x2="50.8" y2="2.54" width="0.1524" layer="1"/>
-<wire x1="56.984" y1="12.192" x2="56.984" y2="10.16" width="0.1524" layer="1"/>
+<wire x1="56.984" y1="10.16" x2="50.8" y2="3.976" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="50.8" y1="3.976" x2="50.8" y2="2.54" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.984" y1="14.224" x2="56.984" y2="10.16" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.984" y1="14.224" x2="55.284" y2="14.224" width="0" layer="19" extent="16-16"/>
+<wire x1="55.284" y1="12.192" x2="55.284" y2="14.224" width="0" layer="19" extent="16-16"/>
+<wire x1="55.284" y1="10.16" x2="55.284" y2="12.192" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SW_Y">
 <contactref element="U1" pad="A1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="61.937" y1="12.192" x2="61.937" y2="10.16" width="0.1524" layer="1"/>
-<wire x1="61.937" y1="14.224" x2="61.937" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="61.937" y1="10.16" x2="57.365" y2="5.588" width="0.1524" layer="1"/>
-<wire x1="57.365" y1="5.588" x2="54.229" y2="5.588" width="0.1524" layer="1"/>
-<wire x1="54.229" y1="5.588" x2="53.34" y2="4.699" width="0.1524" layer="1"/>
-<wire x1="53.34" y1="4.699" x2="53.34" y2="2.54" width="0.1524" layer="1"/>
+<wire x1="61.937" y1="14.224" x2="61.937" y2="10.16" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="61.937" y1="10.16" x2="57.365" y2="5.588" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="57.365" y1="5.588" x2="54.229" y2="5.588" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="54.229" y1="5.588" x2="53.34" y2="4.699" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="53.34" y1="4.699" x2="53.34" y2="2.54" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="61.937" y1="14.224" x2="60.237" y2="14.224" width="0" layer="19" extent="16-16"/>
+<wire x1="60.237" y1="12.192" x2="60.237" y2="14.224" width="0" layer="19" extent="16-16"/>
+<wire x1="60.237" y1="10.16" x2="60.237" y2="12.192" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E1CHB_RAW">
 <contactref element="U$5" pad="P$1"/>
 <contactref element="JP7" pad="2"/>
-<wire x1="3.937" y1="38.735" x2="3.2258" y2="38.735" width="0.1524" layer="1"/>
-<wire x1="3.2258" y1="38.735" x2="2.285990625" y2="37.795190625" width="0.1524" layer="1"/>
-<wire x1="2.285990625" y1="37.795190625" x2="2.285990625" y2="29.337009375" width="0.1524" layer="1"/>
-<wire x1="2.285990625" y1="29.337009375" x2="3.302" y2="28.321" width="0.1524" layer="1"/>
+<wire x1="3.937" y1="38.735" x2="3.2258" y2="38.735" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="3.2258" y1="38.735" x2="2.285990625" y2="37.795190625" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="2.285990625" y1="37.795190625" x2="2.285990625" y2="29.337009375" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="2.285990625" y1="29.337009375" x2="3.302" y2="28.321" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E2CHB_RAW">
 <contactref element="U$6" pad="P$1"/>
 <contactref element="JP3" pad="2"/>
-<wire x1="3.429" y1="20.828" x2="9.3434" y2="26.7424" width="0.1524" layer="1"/>
-<wire x1="9.3434" y1="26.7424" x2="9.45588125" y2="26.7424" width="0.1524" layer="1"/>
-<wire x1="9.45588125" y1="26.7424" x2="15.98748125" y2="33.274" width="0.1524" layer="1"/>
-<wire x1="28.956" y1="33.274" x2="34.671" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="15.98748125" y1="33.274" x2="28.956" y2="33.274" width="0.1524" layer="1"/>
+<wire x1="3.429" y1="20.828" x2="9.3434" y2="26.7424" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="9.3434" y1="26.7424" x2="9.45588125" y2="26.7424" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="9.45588125" y1="26.7424" x2="15.98748125" y2="33.274" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.956" y1="33.274" x2="34.671" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="15.98748125" y1="33.274" x2="28.956" y2="33.274" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E2CHA_RAW">
 <contactref element="U$6" pad="P$2"/>
 <contactref element="JP5" pad="2"/>
-<wire x1="8.929" y1="20.828" x2="19.978" y2="31.877" width="0.1524" layer="1"/>
-<wire x1="19.978" y1="31.877" x2="42.672" y2="31.877" width="0.1524" layer="1"/>
-<wire x1="42.672" y1="31.877" x2="49.403" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="49.403" y1="38.608" x2="49.403" y2="38.989" width="0.1524" layer="1"/>
+<wire x1="8.929" y1="20.828" x2="19.978" y2="31.877" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="19.978" y1="31.877" x2="42.672" y2="31.877" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="42.672" y1="31.877" x2="49.403" y2="38.608" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="49.403" y1="38.608" x2="49.403" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E1CHA_RAW">
 <contactref element="U$5" pad="P$2"/>
 <contactref element="JP11" pad="2"/>
-<wire x1="8.802" y1="28.321" x2="19.597" y2="39.116" width="0.1524" layer="1"/>
-<wire x1="19.597" y1="39.116" x2="19.685" y2="39.116" width="0.1524" layer="1"/>
+<wire x1="8.802" y1="28.321" x2="19.597" y2="39.116" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="19.597" y1="39.116" x2="19.685" y2="39.116" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E1CHA">
 <contactref element="U1" pad="D12"/>
-<wire x1="31.75" y1="50.546" x2="31.496" y2="50.8" width="0.1524" layer="1"/>
 <contactref element="JP12" pad="2"/>
-<wire x1="32.258" y1="40.513" x2="30.861" y2="39.116" width="0.1524" layer="1"/>
-<wire x1="28.702" y1="39.116" x2="30.861" y2="39.116" width="0.1524" layer="1"/>
-<wire x1="32.258" y1="50.038" x2="32.258" y2="40.513" width="0.1524" layer="1"/>
-<wire x1="32.258" y1="50.038" x2="31.496" y2="50.8" width="0.1524" layer="1"/>
+<wire x1="32.258" y1="40.513" x2="30.861" y2="39.116" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.702" y1="39.116" x2="30.861" y2="39.116" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="32.258" y1="50.038" x2="32.258" y2="40.513" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="32.258" y1="50.038" x2="31.496" y2="50.8" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E1CHB">
 <contactref element="U1" pad="D13"/>
 <contactref element="JP8" pad="2"/>
-<wire x1="17.526" y1="45.339" x2="16.764" y2="44.577" width="0.1524" layer="1"/>
-<wire x1="17.526" y1="45.339" x2="28.702" y2="45.339" width="0.1524" layer="1"/>
-<wire x1="28.702" y1="45.339" x2="28.956" y2="45.593" width="0.1524" layer="1"/>
-<wire x1="28.956" y1="45.593" x2="28.956" y2="50.8" width="0.1524" layer="1"/>
-<wire x1="16.764" y1="44.577" x2="16.764" y2="41.275" width="0.1524" layer="1"/>
-<wire x1="14.224" y1="38.735" x2="12.954" y2="38.735" width="0.1524" layer="1"/>
-<wire x1="16.764" y1="41.275" x2="14.224" y2="38.735" width="0.1524" layer="1"/>
+<wire x1="17.526" y1="45.339" x2="16.764" y2="44.577" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="17.526" y1="45.339" x2="28.702" y2="45.339" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.702" y1="45.339" x2="28.956" y2="45.593" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.956" y1="45.593" x2="28.956" y2="50.8" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="16.764" y1="44.577" x2="16.764" y2="41.275" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="14.224" y1="38.735" x2="12.954" y2="38.735" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="16.764" y1="41.275" x2="14.224" y2="38.735" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="N$5">
 <contactref element="R9" pad="1"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="34.671" y1="36.449" x2="35.052" y2="36.83" width="0.1524" layer="1"/>
-<wire x1="35.052" y1="36.83" x2="38.52" y2="36.83" width="0.1524" layer="1"/>
+<wire x1="34.671" y1="36.449" x2="35.052" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="35.052" y1="36.83" x2="38.52" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="38.52" y1="36.83" x2="40.22" y2="36.83" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E2CHB_BYPASS">
 <contactref element="JP3" pad="3"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="34.671" y1="41.529" x2="37.7817125" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="37.7817125" y1="41.529" x2="37.8753125" y2="41.6226" width="0.1524" layer="1"/>
-<wire x1="40.8646875" y1="41.6226" x2="40.9582875" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="40.9582875" y1="41.529" x2="43.688" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="37.8753125" y1="41.6226" x2="40.8646875" y2="41.6226" width="0.1524" layer="1"/>
+<wire x1="34.671" y1="41.529" x2="37.7817125" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="37.7817125" y1="41.529" x2="37.8753125" y2="41.6226" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="40.8646875" y1="41.6226" x2="40.9582875" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="40.9582875" y1="41.529" x2="43.688" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="37.8753125" y1="41.6226" x2="40.8646875" y2="41.6226" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E2CHB">
 <contactref element="JP4" pad="2"/>
 <contactref element="U1" pad="D10"/>
-<wire x1="47.117" y1="42.926" x2="47.117" y2="40.64" width="0.1524" layer="1"/>
-<wire x1="45.466" y1="38.989" x2="43.688" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="47.117" y1="40.64" x2="45.466" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="36.576" y1="50.8" x2="42.545" y2="44.831" width="0.1524" layer="1"/>
-<wire x1="42.545" y1="44.831" x2="45.212" y2="44.831" width="0.1524" layer="1"/>
-<wire x1="45.212" y1="44.831" x2="47.117" y2="42.926" width="0.1524" layer="1"/>
+<wire x1="47.117" y1="42.926" x2="47.117" y2="40.64" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.466" y1="38.989" x2="43.688" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="47.117" y1="40.64" x2="45.466" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="36.576" y1="50.8" x2="42.545" y2="44.831" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="42.545" y1="44.831" x2="45.212" y2="44.831" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="45.212" y1="44.831" x2="47.117" y2="42.926" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E2CHB_DB">
 <contactref element="C5" pad="1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="40.22" y1="36.83" x2="38.52" y2="38.53" width="0.1524" layer="1"/>
-<wire x1="38.52" y1="38.53" x2="38.52" y2="38.862" width="0.1524" layer="1"/>
-<wire x1="40.22" y1="36.83" x2="43.307" y2="36.83" width="0.1524" layer="1"/>
-<wire x1="43.307" y1="36.83" x2="43.688" y2="36.449" width="0.1524" layer="1"/>
-<wire x1="38.52" y1="38.862" x2="38.52" y2="40.894" width="0.1524" layer="1"/>
+<wire x1="40.22" y1="36.83" x2="38.52" y2="38.53" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="40.22" y1="36.83" x2="43.307" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="43.307" y1="36.83" x2="43.688" y2="36.449" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="38.52" y1="38.53" x2="38.52" y2="40.894" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="38.52" y1="40.894" x2="40.22" y2="40.894" width="0" layer="19" extent="16-16"/>
+<wire x1="40.22" y1="38.862" x2="40.22" y2="40.894" width="0" layer="19" extent="16-16"/>
+<wire x1="38.52" y1="36.83" x2="40.22" y2="38.862" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E2CHA">
 <contactref element="U1" pad="D9"/>
 <contactref element="JP6" pad="2"/>
-<wire x1="56.52328125" y1="45.466" x2="56.646140625" y2="45.343140625" width="0.1524" layer="1"/>
-<wire x1="44.45" y1="45.466" x2="39.116" y2="50.8" width="0.1524" layer="1"/>
-<wire x1="56.52328125" y1="45.466" x2="44.45" y2="45.466" width="0.1524" layer="1"/>
-<wire x1="56.646140625" y1="45.343140625" x2="60.828859375" y2="45.343140625" width="0.1524" layer="1"/>
-<wire x1="62.23" y1="43.942" x2="62.23" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="62.23" y1="38.989" x2="58.42" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="60.828859375" y1="45.343140625" x2="62.23" y2="43.942" width="0.1524" layer="1"/>
+<wire x1="56.52328125" y1="45.466" x2="56.646140625" y2="45.343140625" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="44.45" y1="45.466" x2="39.116" y2="50.8" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.52328125" y1="45.466" x2="44.45" y2="45.466" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="56.646140625" y1="45.343140625" x2="60.828859375" y2="45.343140625" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="62.23" y1="43.942" x2="62.23" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="62.23" y1="38.989" x2="58.42" y2="38.989" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="60.828859375" y1="45.343140625" x2="62.23" y2="43.942" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="N$3">
 <contactref element="R7" pad="1"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="49.403" y1="36.449" x2="49.784" y2="36.83" width="0.1524" layer="1"/>
-<wire x1="49.784" y1="36.83" x2="53.252" y2="36.83" width="0.1524" layer="1"/>
+<wire x1="49.403" y1="36.449" x2="49.784" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="49.784" y1="36.83" x2="53.252" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="53.252" y1="36.83" x2="54.952" y2="36.83" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E2CHA_BYPASS">
 <contactref element="JP5" pad="3"/>
 <contactref element="JP6" pad="1"/>
-<wire x1="49.403" y1="41.529" x2="52.5137125" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="52.5137125" y1="41.529" x2="52.6073125" y2="41.6226" width="0.1524" layer="1"/>
-<wire x1="55.5966875" y1="41.6226" x2="55.6902875" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="55.6902875" y1="41.529" x2="58.42" y2="41.529" width="0.1524" layer="1"/>
-<wire x1="52.6073125" y1="41.6226" x2="55.5966875" y2="41.6226" width="0.1524" layer="1"/>
+<wire x1="49.403" y1="41.529" x2="52.5137125" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="52.5137125" y1="41.529" x2="52.6073125" y2="41.6226" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="55.5966875" y1="41.6226" x2="55.6902875" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="55.6902875" y1="41.529" x2="58.42" y2="41.529" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="52.6073125" y1="41.6226" x2="55.5966875" y2="41.6226" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E2CHA_DB">
 <contactref element="C4" pad="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R7" pad="2"/>
 <contactref element="JP6" pad="3"/>
-<wire x1="54.952" y1="36.83" x2="58.039" y2="36.83" width="0.1524" layer="1"/>
-<wire x1="58.039" y1="36.83" x2="58.42" y2="36.449" width="0.1524" layer="1"/>
-<wire x1="54.952" y1="36.83" x2="53.252" y2="38.53" width="0.1524" layer="1"/>
-<wire x1="53.252" y1="38.53" x2="53.252" y2="38.862" width="0.1524" layer="1"/>
-<wire x1="53.252" y1="38.862" x2="53.252" y2="40.894" width="0.1524" layer="1"/>
+<wire x1="54.952" y1="36.83" x2="58.039" y2="36.83" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="58.039" y1="36.83" x2="58.42" y2="36.449" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="54.952" y1="36.83" x2="53.252" y2="38.53" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="53.252" y1="38.53" x2="53.252" y2="40.894" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="53.252" y1="40.894" x2="54.952" y2="40.894" width="0" layer="19" extent="16-16"/>
+<wire x1="54.952" y1="38.862" x2="54.952" y2="40.894" width="0" layer="19" extent="16-16"/>
+<wire x1="53.252" y1="36.83" x2="54.952" y2="38.862" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$6">
 <contactref element="R11" pad="1"/>
 <contactref element="JP7" pad="1"/>
-<wire x1="7.786" y1="36.576" x2="7.405" y2="36.195" width="0.1524" layer="1"/>
-<wire x1="7.405" y1="36.195" x2="4.6482" y2="36.195" width="0.1524" layer="1"/>
-<wire x1="4.6482" y1="36.195" x2="3.937" y2="36.195" width="0.1524" layer="1"/>
+<wire x1="7.786" y1="36.576" x2="7.405" y2="36.195" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.405" y1="36.195" x2="3.937" y2="36.195" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.786" y1="36.576" x2="9.486" y2="36.576" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="R15" pad="1"/>
 <contactref element="JP11" pad="1"/>
-<wire x1="19.685" y1="36.576" x2="23.153" y2="36.576" width="0.1524" layer="1"/>
-<wire x1="23.153" y1="36.576" x2="23.534" y2="36.957" width="0.1524" layer="1"/>
+<wire x1="19.685" y1="36.576" x2="23.153" y2="36.576" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="23.153" y1="36.576" x2="23.534" y2="36.957" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="23.534" y1="36.957" x2="25.234" y2="36.957" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E1CHB_BYPASS">
 <contactref element="JP7" pad="3"/>
 <contactref element="JP8" pad="1"/>
-<wire x1="3.937" y1="41.275" x2="7.0477125" y2="41.275" width="0.1524" layer="1"/>
-<wire x1="7.0477125" y1="41.275" x2="7.1413125" y2="41.3686" width="0.1524" layer="1"/>
-<wire x1="10.1306875" y1="41.3686" x2="10.2242875" y2="41.275" width="0.1524" layer="1"/>
-<wire x1="10.2242875" y1="41.275" x2="12.954" y2="41.275" width="0.1524" layer="1"/>
-<wire x1="7.1413125" y1="41.3686" x2="10.1306875" y2="41.3686" width="0.1524" layer="1"/>
+<wire x1="3.937" y1="41.275" x2="7.0477125" y2="41.275" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.0477125" y1="41.275" x2="7.1413125" y2="41.3686" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="10.1306875" y1="41.3686" x2="10.2242875" y2="41.275" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="10.2242875" y1="41.275" x2="12.954" y2="41.275" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.1413125" y1="41.3686" x2="10.1306875" y2="41.3686" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E1CHB_DB">
 <contactref element="C6" pad="1"/>
 <contactref element="R12" pad="1"/>
 <contactref element="R11" pad="2"/>
 <contactref element="JP8" pad="3"/>
-<wire x1="9.486" y1="36.576" x2="12.573" y2="36.576" width="0.1524" layer="1"/>
-<wire x1="12.573" y1="36.576" x2="12.954" y2="36.195" width="0.1524" layer="1"/>
-<wire x1="9.486" y1="36.576" x2="7.786" y2="38.276" width="0.1524" layer="1"/>
-<wire x1="7.786" y1="38.276" x2="7.786" y2="38.608" width="0.1524" layer="1"/>
-<wire x1="7.786" y1="40.64" x2="7.786" y2="38.608" width="0.1524" layer="1"/>
+<wire x1="9.486" y1="36.576" x2="12.573" y2="36.576" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="12.573" y1="36.576" x2="12.954" y2="36.195" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="9.486" y1="36.576" x2="7.786" y2="38.276" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.786" y1="40.64" x2="7.786" y2="38.276" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="7.786" y1="40.64" x2="9.486" y2="40.64" width="0" layer="19" extent="16-16"/>
+<wire x1="9.486" y1="38.608" x2="9.486" y2="40.64" width="0" layer="19" extent="16-16"/>
+<wire x1="7.786" y1="36.576" x2="9.486" y2="38.608" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E1CHA_BYPASS">
 <contactref element="JP11" pad="3"/>
 <contactref element="JP12" pad="1"/>
-<wire x1="19.685" y1="41.656" x2="22.7957125" y2="41.656" width="0.1524" layer="1"/>
-<wire x1="22.7957125" y1="41.656" x2="22.8893125" y2="41.7496" width="0.1524" layer="1"/>
-<wire x1="25.8786875" y1="41.7496" x2="25.9722875" y2="41.656" width="0.1524" layer="1"/>
-<wire x1="25.9722875" y1="41.656" x2="28.702" y2="41.656" width="0.1524" layer="1"/>
-<wire x1="22.8893125" y1="41.7496" x2="25.8786875" y2="41.7496" width="0.1524" layer="1"/>
+<wire x1="19.685" y1="41.656" x2="22.7957125" y2="41.656" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="22.7957125" y1="41.656" x2="22.8893125" y2="41.7496" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="25.8786875" y1="41.7496" x2="25.9722875" y2="41.656" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="25.9722875" y1="41.656" x2="28.702" y2="41.656" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="22.8893125" y1="41.7496" x2="25.8786875" y2="41.7496" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
 </signal>
 <signal name="E1CHA_DB">
 <contactref element="C8" pad="1"/>
 <contactref element="R16" pad="1"/>
 <contactref element="R15" pad="2"/>
 <contactref element="JP12" pad="3"/>
-<wire x1="25.234" y1="36.957" x2="28.321" y2="36.957" width="0.1524" layer="1"/>
-<wire x1="28.321" y1="36.957" x2="28.702" y2="36.576" width="0.1524" layer="1"/>
-<wire x1="25.234" y1="36.957" x2="23.534" y2="38.657" width="0.1524" layer="1"/>
-<wire x1="23.534" y1="38.657" x2="23.534" y2="38.989" width="0.1524" layer="1"/>
-<wire x1="23.534" y1="38.989" x2="23.534" y2="41.021" width="0.1524" layer="1"/>
+<wire x1="25.234" y1="36.957" x2="28.321" y2="36.957" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="28.321" y1="36.957" x2="28.702" y2="36.576" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="25.234" y1="36.957" x2="23.534" y2="38.657" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="23.534" y1="38.657" x2="23.534" y2="41.021" width="0.1524" layer="16" grouprefs="PARTS-AND-WIRES CHANGESTUFF"/>
+<wire x1="23.534" y1="41.021" x2="25.234" y2="41.021" width="0" layer="19" extent="16-16"/>
+<wire x1="25.234" y1="38.989" x2="25.234" y2="41.021" width="0" layer="19" extent="16-16"/>
+<wire x1="23.534" y1="36.957" x2="25.234" y2="38.989" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -2148,6 +2173,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
