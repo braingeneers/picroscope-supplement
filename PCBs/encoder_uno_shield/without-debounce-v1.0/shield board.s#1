@@ -8354,7 +8354,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="A1"/>
 <wire x1="58.42" y1="12.7" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
-<label x="60.96" y="10.16" size="1.778" layer="95"/>
+<label x="58.42" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
