@@ -1,0 +1,9 @@
+Part Value            Device           Package          Description                                                                                                                 
+C1   0.1uF            C-USC0603        C0603            CAPACITOR, American symbol                                                                                                  
+R3   1k               R-US_R0603       R0603            RESISTOR, American symbol                                                                                                   
+R4   10k              R-US_R0603       R0603            RESISTOR, American symbol                                                                                                   
+U$2  MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN                                                                                                                             
+U$3  MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN                                                                                                                             
+U$4  MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN                                                                                                                             
+U$5  MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN                                                                                                                             
+U$6  MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN                                                                                                                             

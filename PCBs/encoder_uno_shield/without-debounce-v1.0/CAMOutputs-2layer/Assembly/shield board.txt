@@ -1,0 +1,8 @@
+Partlist exported from /Users/pierre/Documents/EAGLE/projects/PCBs/encoder_uno_shield/without-debounce-v1.0/shield board.sch at 3/24/22 8:08 PM
+
+Qty Value            Device           Package          Parts                   Description                                                                                                                 
+1   0.1uF            C-USC0603        C0603            C1                      CAPACITOR, American symbol                                                                                                  
+1   10k              R-US_R0603       R0603            R4                      RESISTOR, American symbol                                                                                                   
+1   1k               R-US_R0603       R0603            R3                      RESISTOR, American symbol                                                                                                   
+1   ARDUINOR3-BPLACE ARDUINOR3-BPLACE ARDUINOR3-BPLACE U1                      This is a new object for the new Arduino R3 - with extra pins that you may want to use (such as IOref, and duplicated A4/A5 
+5   MOLEX_0039301022 MOLEX_0039301022 MINI-FIT_JR_CONN U$2, U$3, U$4, U$5, U$6                                                                                                                             
